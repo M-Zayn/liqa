@@ -446,6 +446,11 @@ a:hover, a:focus {
   border: none;
 }
 
+.nav-bar .sec-two ul li:hover img {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
 .nav-bar .sec-two ul .nav-img {
   height: 63px;
   display: -webkit-box;
@@ -457,6 +462,11 @@ a:hover, a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.nav-bar .sec-two ul .nav-img img {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .nav-bar .sec-three {
@@ -540,6 +550,8 @@ a:hover, a:focus {
   height: 50px;
   font-size: 20px;
   color: white;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .nav-bar .icons a:nth-of-type(1) {
@@ -552,6 +564,11 @@ a:hover, a:focus {
 
 .nav-bar .icons a:nth-of-type(3) {
   background-color: #6d6b73;
+}
+
+.nav-bar .icons a:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 .nav-bar .icons button {
@@ -1997,4 +2014,3 @@ html[dir="ltr"] .footer .subscribe button {
   }
 }
 
-/*# sourceMappingURL=home.css.map */
