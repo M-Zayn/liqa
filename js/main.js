@@ -147,17 +147,21 @@ $(function() {
 
   // menu - search
 
-    $(".nav-bar .icons a:nth-of-type(3), .sec-four button:nth-of-type(2)").on("click", function () {
-      $(".search").fadeIn();
-      $('html, body').css("overflow-y", "hidden");
+    $(".nav-bar .icons a:nth-of-type(3)").on("click", function () {
+      $(".search").toggleClass("show");
+      $(".nav-bar .icons .lnr-magnifier").toggleClass("lnr-cross");
+      
+      // $(".search").fadeIn();
+      // $('html, body').css("overflow-y", "hidden");
     });
-    $(".search, .search .close").on("click", function () {
-      $(".search").fadeOut();
-      $('html, body').css("overflow-y", "visible");
-    });
-    $(".search .zx-container").on("click", function(e) {
-      e.stopPropagation();
-    });
+    // $(".search, .search .close").on("click", function () {
+    //   $(".search").fadeOut();
+    //   $('html, body').css("overflow-y", "visible");
+
+    // });
+    // $(".search .zx-container").on("click", function(e) {
+    //   e.stopPropagation();
+    // });
 
 
 
